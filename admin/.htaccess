@@ -1,0 +1,49 @@
+RewriteEngine On
+
+RewriteRule ^login.9web?$ index.php
+RewriteRule ^home.9web?$ home.php
+RewriteRule ^dashboard.9web?$ dashboard.php
+RewriteRule ^login.9web?$ index.php
+RewriteRule ^clients.9web?$ clients.php 
+RewriteRule ^hotel.9web?$ hotel.php
+RewriteRule ^image_gallery.9web?$ image_gallery.php
+RewriteRule ^video_gallery.9web?$ video_gallery.php
+RewriteRule ^events.9web?$ event.php
+RewriteRule ^destinations.9web?$ destinations.php
+RewriteRule ^tours.9web?$ tours.php
+RewriteRule ^tour-details.9web?$ tour_details.php
+RewriteRule ^tour_banner.9web?$ tour_banner.php
+RewriteRule ^blog.9web?$ blog.php
+RewriteRule ^blog_contents.9web?$ blog_contents.php
+RewriteRule ^room-details1111.9web/([0-9a-zA-Z-=]+)/([0-9a-zA-Z-=]+) room_details.php?name=$1&id=$2 
+RewriteRule ^testimonial.9web?$ testimonial.php
+RewriteRule ^terms_and_conditions.9web?$ terms_and_conditions.php
+RewriteRule ^why-choose.9web?$ why_choose.php
+RewriteRule ^travel_tipes.9web?$ travel_tipes.php
+
+RewriteRule ^tours-itinerary.9web?$ tours_itinerary.php
+RewriteRule ^about.9web?$ about.php
+
+RewriteRule ^gallery.9web?$ gallery.php
+RewriteRule ^things-to-do.9web?$ things_to_do.php
+
+RewriteRule ^offer.9web?$ offer.php
+RewriteRule ^banner.9web?$ banner.php
+RewriteRule ^keywords.9web?$ keywords.php
+RewriteRule ^social.9web?$ social.php
+RewriteRule ^faq.9web?$ faq.php
+RewriteRule ^verify.9web?$ verify.php
+
+
+
+
+
+
+
+
+Options +MultiViews
+
+
+
+
+ErrorDocument 404 /index.php

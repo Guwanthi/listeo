@@ -1,0 +1,25 @@
+RewriteEngine On
+
+RewriteRule ^home.web?$ index.php
+RewriteRule ^about_us.web?$ about.php
+RewriteRule ^plan_tour.web?$ tailor-made.php
+RewriteRule ^airport_transfer.web?$ airport-transfer.php
+RewriteRule ^contact.web?$ contact.php
+RewriteRule ^things_to_do.web?$ things_to_do.php
+RewriteRule ^tour_packages.web?$ tours.php
+RewriteRule ^package_details.web/([0-9a-zA-Z-=()-]+)/([0-9a-zA-Z-=]+) package-details.php?name=$1&id=$2
+RewriteRule ^destinations.web?$ destinations.php
+RewriteRule ^gallery.web?$ gallery.php
+RewriteRule ^blogs.web?$ blogs.php
+RewriteRule ^blog_details.web/([0-9a-zA-Z-=()-]+)/([0-9a-zA-Z-=]+) blog-details.php?name=$1&id=$2
+
+
+
+
+
+Options +MultiViews
+
+
+
+
+ErrorDocument 404 /index.php
